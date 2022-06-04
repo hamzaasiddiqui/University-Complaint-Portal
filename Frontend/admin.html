@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>UCP</title>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link type = "text/css" rel = "stylesheet" href = "style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <span class="navbar-brand">UCP</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="home.html">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="Login.html">Login<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="#">Admin<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="respondent.html">Respondent<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" id="about" href="about.html">About<span class="sr-only">(current)</span></a>
+                </div>
+            </div>
+        </nav>
+
+        <div class = "t1" >
+            <form action = "../Backend/admin_login.php" method = "post" >
+            <div class = "t2" >
+            <table align = "center" cellpadding = "11px" cellspacing = "2px">	
+            <tr>
+            <div class = "sign">
+            <td style = " font-size : 30px; color :white; "><center>Admin Sign In<center></td>
+            </div>
+            </tr>
+            <div class = "uandP">
+            <tr>
+            <td><img src = "../media/login_icon.png" width = "245px" height = "185px"  style = " margin-left : 65px; " /></td>
+            </tr>
+            <tr>
+            <td><input type = "text" name = "uname" style = " width : 125%; height : 40px; " placeholder = "Username" required /></td>
+            </tr></br >
+            <tr>
+            <td><input type = "password" name = "pass" style = " width : 125%; height : 40px; " placeholder = "Password" /></td>
+            </tr>
+            
+            <br />
+            <tr>
+            <td align = "center" ><input type = "submit" name = "login" value = "LOG IN" style = " width : 125%; height : 40px; border: none;
+            outline: none; padding: 10px 20px; border-radius: 50px; color: #333; background: #fff; margin-bottom: 50px; box-shadow: 0 3px 20px 0 #0000003b;cursor: pointer;" /></td>
+            </tr>
+            
+            </div>
+            
+        </table>
+        </div>
+        </form>
+        </div>
+    </body>
+</html>
